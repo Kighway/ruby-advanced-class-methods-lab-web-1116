@@ -42,7 +42,7 @@ class Song
   end
 
   def self.destroy_all
-    @@all = []
+    @@all = self.all.clear
   end
 
   def self.new_from_filename (filename)
